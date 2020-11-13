@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Notes</title>
+        <link rel="stylesheet" href="Design1.css">
+    </head>
+    <body>
+<div class="wrapper">
+    <div class="multi_color_border"></div>
+    <div class="top_nav">
+        <div class="left">
+          <div class="logo"><p><span>JAIN's</span>Notes</p></div>
+          <div class="search_bar">
+              <input type="text" placeholder="Search">
+          </div>
+      </div> 
+      <div class="right">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Whatsnext.html">Whats Next</a></li>
+          <li><a href="Login.html">Signup/Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom_nav">
+      <ul>
+        <li><a href="P-Cycle.html">P-Cycle</a></li>
+        <li><a href="C-Cycle.html">C-Cycle</a></li>
+        <li><a href="#">3rd Sem</a></li>
+        <li><a href="4thSem.html">4th Sem</a></li>
+        <li><a href="5thSem.html">5th Sem</a></li>
+        <li><a href="6thSem.html">6th Sem</a></li>
+        <li><a href="7thSem.html">7th Sem</a></li>
+        <li><a href="8thSem.html">8th Sem</a></li>
+      </ul>
+  </div>
+  <div class="multi_color_border1"></div>
+  <div id="location">
+    3rd Semester
+  </div>
+</div>
+<br> <br>
+<center>
+<div class="container">
+  <button class="click" id="c1">CSE</button>
+    <div class="list" id="l1">
+      <button class="links">Link 1</button>
+      <button class="links">Link 2</button>
+      <button class="links">Link 3</button>
+      <button class="links">Link 4</button>
+      <button class="links">Link 5</button>
+    </div>
+</div>
+</center>
+<br> <br>
+<center>
+  <div class="container">
+    <button class="click" id="c2">EEE</button>
+      <div class="list" id="l2">
+        <button class="links">Link 1</button>
+        <button class="links">Link 2</button>
+        <button class="links">Link 3</button>
+        <button class="links">Link 4</button>
+        <button class="links">Link 5</button>
+      </div>
+  </div>
+  </center>
+<script>
+  let click = document.querySelector('#c1');
+  let list = document.querySelector('#l1');
+  click.addEventListener("click",()=>{
+      list.classList.toggle('newlist');
+  });
+  let c2 = document.querySelector('#c2');
+  let l2 = document.querySelector('#l2');
+  c2.addEventListener("click",()=>{
+      l2.classList.toggle('newlist');
+  });
+</script>
+    </body>
+</html>   
